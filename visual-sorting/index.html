@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <title>Sorting Visualizer!</title>
+    </head>
+    <body>
+        <div id="bars-container" class="bars-container"></div>
+        <div class="btn-container">
+            <select name="alg-select" id="alg-select">
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="insert">Insertion Sort</option>
+                <option value="heap">Heap Sort</option>
+            </select>
+            <button id="run-btn">Run</button>
+            <button id="randomize-btn">Randomize</button>
+            <div class="slider-container">
+                <input type="range" id="speed-slider" class="speed-slider" min="5" max="1000" value="5" step="5">
+                <p>Delay (ms): <span id="speed-value">5</span></p>
+            </div>
+        </div>
+        <script src="sorting.js"></script>
+    </body>
+</html>
+
